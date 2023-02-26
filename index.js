@@ -30,7 +30,9 @@ app.post("/register",async(req,res)=>{
  })
 
 
-
+app.get("/",(req,res)=>{
+    res.send("welcome to my heart ")
+})
  
 app.post("/login",async(req,res)=>{
     const {email,pass}=(req.body) 
